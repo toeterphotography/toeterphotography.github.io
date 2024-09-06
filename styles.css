@@ -159,3 +159,7 @@ body{
 .border-right{
     border-right-color: var(--secondary) !important;
 }
+
+.border{
+    border-color: var(--secondary) !important;
+}
