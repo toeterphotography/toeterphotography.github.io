@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Title</title>
+
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -15,12 +16,13 @@
             crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container-fluid">
             <div class="container">
                 <div class="row justify-content-center pb-5 pt-3">
-                    <img src="res/logo_toeter_rond.png" width="220px" />
+                    <img src="res/logo_toeter_rond.png" class="toeter-header-logo" />
                 </div>
             </div>
         </div>
@@ -43,7 +45,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-5 offset-1 py-5">
+                <div class="col-5 offset-1 pt-5">
                     <h1 class="reey font--light">Shoots</h1>
                 </div>
             </div>
@@ -55,7 +57,7 @@
                     <img src="res/toeter_ster.png" height="50" />
                 </div>
                 <div class="col-10">
-                    <h2 class="reey font--light">Portretfotografie</h2>
+                    <h2 class="reey font--light" id="portret-fotografie">Portretfotografie</h2>
                 </div>
 
                 <div class="col-12 my-3">
@@ -81,55 +83,68 @@
                 </div>
 
                 <div class="col-12 my-3">
-                    <h5 class="font--secondary"><span class="font--light">☆</span>Ik werk graag als volgt:</h5>
+                    <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  
+ 
+                           <span class="font--secondary"><span class="font--light">☆</span>Ik werk graag als volgt:</span>
+                         </button>
+                    
+</p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                           
 
-                    <ul class="font--light">
-                        <li>
-                            Contactformulier <br />
-                            Vul het contactformulier in en verwoord zo goed mogelijk wat je graag zou willen en waar je
-                            naar op zoek bent. Ik neem dan zo snel mogelijk contact met je op om te kijken wat je wensen
-                            zijn en of ik iets voor je kan betekenen. 
-                        </li>
+                            <ul class="font--light">
+                                <li>
+                                    Contactformulier <br />
+                                    Vul het contactformulier in en verwoord zo goed mogelijk wat je graag zou willen en
+                                    waar je naar op zoek bent. Ik neem dan zo snel mogelijk contact met je op om te
+                                    kijken wat je wensen zijn en of ik iets voor je kan betekenen. 
+                                </li>
 
-                        <li>
-                            Kennismaking &amp; Consultatie <br />
-                            Aan de hand van ons gesprek maak ik graag een digitale afspraak met je om in detail te
-                            bespreken hoe het eindproduct eruit moet komen te zien, wat je verwachtingen zijn en waar de
-                            shoot plaats moet vinden. Na het gesprek stuur ik je een op maat gemaakte  offerte met
-                            opdrachtomschrijving toe waarin vermeld staat wat je wensen zijn en wat ik daadwerkelijk
-                            voor je op ga leveren. 
-                        </li>
-                        <li>
-                            Opdrachtomschrijving &amp; Factuur <br />
-                            Na het tekenen van de opdrachtomschrijving en het betalen van de factuur, ga ik voor je aan
-                            de slag en betrek ik je bij dit proces om een goed en kwalitatief resultaat op te leveren
-                            wat voldoet aan je verwachtingen.
-                        </li>
-                        <li>
-                            Fotoshoot <br />
-                            Dan is het eindelijk zover! Shoot dag! Tijdens de shoot nemen we de tijd en de rust om je op
-                            je gemak te stellen en een fijne sfeer en omgeving te creëren. Een fijne ervaring tijdens de
-                            shoot resulteert ook in betere foto’s!
-                        </li>
-                        <li>
-                            Nabewerking <br />
-                            Na de shoot maak ik een selectie van de shoot in een gallery van 25 foto’s. Deze foto’s
-                            worden professioneel bewerkt om te zorgen voor de perfecte foto. De nabewerking duurt
-                            maximaal 3 weken, maar vaak heb je de gallery al eerder. 
-                        </li>
-                        <li>
-                            Uitzoeken van de foto’s <br />
-                            Zodra je de 25 nabewerkte foto’s hebt ontvangen, mag je uit gaan zoeken welke foto’s je
-                            daadwerkelijk mooi zou vinden om te hebben. Afhankelijk van de hoeveelheid foto's die we
-                            hebben afgesproken, selecteer je de foto’s die je mooi vindt. Als je toch besluit om meer
-                            foto’s te willen afnemen, kan dat uiteraard tegen een meerprijs. 
-                        </li>
-                        <li>
-                            Levering van de foto’s <br />
-                            Zodra je uitgezocht hebt welke foto’s je mooi vindt en graag zou willen hebben, ga ik ervoor
-                            zorgen dat deze aan je geleverd worden in hoge resolutie. Dit duurt maximaal 1 week.
-                        </li>
-                    </ul>
+                                <li>
+                                    Kennismaking &amp; Consultatie <br />
+                                    Aan de hand van ons gesprek maak ik graag een digitale afspraak met je om in detail
+                                    te bespreken hoe het eindproduct eruit moet komen te zien, wat je verwachtingen zijn
+                                    en waar de shoot plaats moet vinden. Na het gesprek stuur ik je een op maat
+                                    gemaakte  offerte met opdrachtomschrijving toe waarin vermeld staat wat je wensen
+                                    zijn en wat ik daadwerkelijk voor je op ga leveren. 
+                                </li>
+                                <li>
+                                    Opdrachtomschrijving &amp; Factuur <br />
+                                    Na het tekenen van de opdrachtomschrijving en het betalen van de factuur, ga ik voor
+                                    je aan de slag en betrek ik je bij dit proces om een goed en kwalitatief resultaat
+                                    op te leveren wat voldoet aan je verwachtingen.
+                                </li>
+                                <li>
+                                    Fotoshoot <br />
+                                    Dan is het eindelijk zover! Shoot dag! Tijdens de shoot nemen we de tijd en de rust
+                                    om je op je gemak te stellen en een fijne sfeer en omgeving te creëren. Een fijne
+                                    ervaring tijdens de shoot resulteert ook in betere foto’s!
+                                </li>
+                                <li>
+                                    Nabewerking <br />
+                                    Na de shoot maak ik een selectie van de shoot in een gallery van 25 foto’s. Deze
+                                    foto’s worden professioneel bewerkt om te zorgen voor de perfecte foto. De
+                                    nabewerking duurt maximaal 3 weken, maar vaak heb je de gallery al eerder. 
+                                </li>
+                                <li>
+                                    Uitzoeken van de foto’s <br />
+                                    Zodra je de 25 nabewerkte foto’s hebt ontvangen, mag je uit gaan zoeken welke foto’s
+                                    je daadwerkelijk mooi zou vinden om te hebben. Afhankelijk van de hoeveelheid foto's
+                                    die we hebben afgesproken, selecteer je de foto’s die je mooi vindt. Als je toch
+                                    besluit om meer foto’s te willen afnemen, kan dat uiteraard tegen een meerprijs. 
+                                </li>
+                                <li>
+                                    Levering van de foto’s <br />
+                                    Zodra je uitgezocht hebt welke foto’s je mooi vindt en graag zou willen hebben, ga
+                                    ik ervoor zorgen dat deze aan je geleverd worden in hoge resolutie. Dit duurt
+                                    maximaal 1 week.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-12 my-3">
@@ -171,7 +186,7 @@
                     <img src="res/toeter_ster.png" height="50" />
                 </div>
                 <div class="col-10">
-                    <h2 class="reey font--light">Speciale verzoeken</h2>
+                    <h2 class="reey font--light" id="speciale-verzoeken">Speciale verzoeken</h2>
                 </div>
 
                 <div class="col-12 my-3">
@@ -279,7 +294,7 @@
                     <img src="res/toeter_ster.png" height="50" />
                 </div>
                 <div class="col-10">
-                    <h2 class="reey font--light">Bedrijfsfotografie</h2>
+                    <h2 class="reey font--light" id="bedrijfsfotografie">Bedrijfsfotografie</h2>
                 </div>
 
                 <div class="col-12 my-3">

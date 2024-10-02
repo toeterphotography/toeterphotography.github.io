@@ -75,16 +75,25 @@ body{
     font-family: 'Amatic SC';
 }
 
+.toeter-header-logo{
+    width: 180px;
+}
+
 p{
     line-height: 2em;
 }
 
 
+.toeter-star-2{
+    height: 74px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 
-
-
-
+.ttr-cell{
+    padding: 12px;
+}
 
 /*TOETER*/
 
