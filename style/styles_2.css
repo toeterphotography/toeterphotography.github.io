@@ -43,6 +43,10 @@
     color: var(--toeter-secondary) !important;
 }
 
+.txt-small{
+    font-size: 0.9em !important;
+}
+
 .fw-700{
     font-weight: 700;
 }
@@ -63,6 +67,23 @@
 .vidaloka{
     font-family: Vidaloka;
 }
+
+.btn{
+    padding-top: 1.1em;
+    padding-bottom: 1.1em;
+    font-family: Amatic SC;
+}
+
+.btn-primary{
+    background-color: var(--toeter-primary);
+    border-style:none;
+}
+
+.btn-primary:hover{
+    background-color: var(--toeter-primary-variant);
+}
+
+
 
 
 
@@ -106,11 +127,19 @@
     height: 540px
 }
 
+.page-label-background{
+    background-image: linear-gradient(to right, var(--toeter-green),var(--toeter-green),var(--toeter-green), var(--toeter-bg-main), var(--toeter-bg-main), var(--toeter-bg-main));
+}
+
+.bg-layer{
+    z-index: -1;
+}
+
 .page-label{
     background-color: var(--toeter-green);
     border-color: var(--toeter-dark-green);
-    border-top-width: 2px !important;
-    border-bottom-width: 2px !important;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
     border-top-style: solid;
     border-bottom-style: solid;
 }
@@ -121,12 +150,15 @@
     border-top-style: solid;
     border-bottom-style: solid;
     border-right-style: solid;
-    border-top-width: 2px !important;
-    border-bottom-width: 2px !important;
-    border-right-width: 2px !important;
-    border-top-right-radius: 100%;
-    border-bottom-right-radius: 100%;
+    border-top-width: 2px ;
+    border-bottom-width: 2px ;
+    border-right-width: 2px ;
+    border-top-right-radius: 20% 50%;
+    border-bottom-right-radius: 20% 50%;
 }
+
+
+
 .toeter-ster{
     width: 120px
 }
@@ -137,3 +169,27 @@
     color: #fff;
     text-decoration: none;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    .page-label-end{
+        border-style: none;
+        border-radius: 0;
+        border-right-width: 0;
+    }
+    
+    .page-label-background{
+        background-color: var(--toeter-green);
+        background-image: none;
+        border-top-color: var(--toeter-dark-green);
+        border-top-width: 2px;
+        border-top-style: solid;
+        border-bottom-color: var(--toeter-dark-green);
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+    }
+    
+}
+
+
