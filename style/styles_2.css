@@ -1,0 +1,139 @@
+:root {
+    --toeter-primary: #873720;
+    --toeter-primary-variant: #be4d2c;
+
+    --toeter-secondary: #424346;
+    --toeter-secondary-variant: #444548;
+
+    --toeter-green: #bdc6b5;
+    --toeter-green-variant: #a7b49c;
+
+    --toeter-dark-green: #525E54;
+    --toeter-dark-green-variant: #d17b63;
+
+    --toeter-bg-main: #ebe7e4;
+    --toeter-bg-footer: #525e54;
+}
+
+@font-face{
+    font-family: Amatic SC;
+    src: url(style/fonts/AmaticSC-Regular.ttf);
+}
+    
+@font-face{
+    font-family: Century Gothic;
+    src: url(style/fonts/centurygothic.ttf);
+}
+    
+@font-face{
+    font-family: Reey regular;
+    src: url(style/fonts/Reey-Regular.otf);
+}
+
+@font-face{
+    font-family: Vidaloka;
+    src: url(style/fonts/Vidaloka-Regular.ttf);
+}
+
+.txt-light{
+    color: #fff !important;
+}
+
+.txt-dark{
+    color: var(--toeter-secondary) !important;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+
+
+.amatic{
+    font-family: Amatic SC;
+}
+    
+.gothic{
+    font-family: Century Gothic;
+}
+
+.reey{
+    font-family: Reey regular;
+}
+
+.vidaloka{
+    font-family: Vidaloka;
+}
+
+
+
+.bg-main{
+    background-color: var(--toeter-bg-main);
+}
+
+.bg-primary{
+    background-color: var(--toeter-primary) !important;
+}
+
+.bg-green{
+    background-color: var(--toeter-dark-green);
+}
+
+.header-logo{
+    height: 189px;
+}
+
+.navbar-toggler{
+    border-color: transparent;
+    
+}
+
+.navbar-toggler-button > svg{
+    stroke: #9a9a9a;
+}
+.navbar-toggler-button:hover > svg{
+    stroke: #ffffff;
+}
+
+.nav-item > a{
+    color: #fff !important;
+    font-family: Amatic SC;
+    font-size: 1.6em;
+}
+
+.img-header{
+    object-fit: cover;
+    width: 100%;
+    height: 540px
+}
+
+.page-label{
+    background-color: var(--toeter-green);
+    border-color: var(--toeter-dark-green);
+    border-top-width: 2px !important;
+    border-bottom-width: 2px !important;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+.page-label-end{
+    background-color: var(--toeter-green);
+    border-color: var(--toeter-dark-green);
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-top-width: 2px !important;
+    border-bottom-width: 2px !important;
+    border-right-width: 2px !important;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+.toeter-ster{
+    width: 120px
+}
+
+.footer-index-link > a{
+    font-family: Century Gothic;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
