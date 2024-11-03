@@ -209,12 +209,18 @@ svg.carousel-control{
     width: 150px
 }
 
+.ttr-star{
+    max-width: 220px;
+}
+
+
 .footer-index-link > a{
     font-family: Century Gothic;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
 }
+
 
 
 
@@ -238,6 +244,11 @@ svg.carousel-control{
     
     .ttr-shoot-star {
         max-width: 180px;
+    }
+    
+    .ttr-star{
+        max-width: 120px;
+        align-self: center;
     }
     
 }
