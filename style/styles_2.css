@@ -17,22 +17,26 @@
 
 @font-face{
     font-family: Amatic SC;
-    src: url(style/fonts/AmaticSC-Regular.ttf);
+    src: url(/style/fonts/AmaticSC-Regular.ttf);
 }
     
 @font-face{
     font-family: Century Gothic;
-    src: url(style/fonts/centurygothic.ttf);
+    src: url(/style/fonts/centurygothic.ttf);
 }
     
 @font-face{
     font-family: Reey regular;
-    src: url(style/fonts/Reey-Regular.otf);
+    src: url(/style/fonts/Reey-Regular.otf);
 }
 
 @font-face{
     font-family: Vidaloka;
-    src: url(style/fonts/Vidaloka-Regular.ttf);
+    src: url(/style/fonts/Vidaloka-Regular.ttf);
+}
+
+p{
+    line-height: 1.6em;
 }
 
 .txt-light{
@@ -41,6 +45,10 @@
 
 .txt-dark{
     color: var(--toeter-secondary) !important;
+}
+
+.txt-primary{
+    color: var(--toeter-primary) !important;
 }
 
 .txt-small{
@@ -159,8 +167,46 @@
 
 
 
+.toeter-carousel-card{
+    min-height: 20em;
+    background-color: var(--toeter-green);
+}
+.toeter-carousel{
+    min-height: 20em;
+    background-color: var(--toeter-green);
+    border-color: var(--toeter-dark-green);
+    border-style: solid;
+    border-width: 2px
+}
+
+.carousel-control-prev{
+    justify-content: start;
+    margin: 8px;
+}
+.carousel-control-next{
+    justify-content: end;
+    margin: 8px;
+}
+.carousel-control-next-icon{
+    background-image: url(/res/svgs/arrow-right-circle.svg);
+}
+.carousel-control-prev-icon{
+    background-image: url(/res/svgs/arrow-left-circle.svg);
+}
+
+svg.carousel-control{
+    stroke: #e3e3e3;
+}
+
+
+.carousel-control:hover > svg{
+    stroke: #fff !important;
+    text-shadow: 2px 2px 5px var(--toeter-secondary);
+}
+
+
 .toeter-ster{
-    width: 120px
+    width: 150px
 }
 
 .footer-index-link > a{
