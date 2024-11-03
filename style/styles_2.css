@@ -190,6 +190,10 @@
         border-bottom-style: solid;
     }
     
+    .ttr-shoot-star {
+        max-width: 180px;
+    }
+    
 }
 
 
