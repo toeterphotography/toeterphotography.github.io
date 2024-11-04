@@ -1,226 +1,166 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Title</title>
+        <title>Toeter Photography : Home</title>
+
         <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
         <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
+
+        <link rel="stylesheet" href="style/styles_2.css" />
+        <script src="js/toeter.js"></script>
     </head>
-    <body>
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row justify-content-center pb-5 pt-3">
-                    <img src="res/logo_toeter_rond.png" class="toeter-header-logo" />
+    <body class="bg-main vh-100">
+        <!------------------------------navbar------------------------------>
+        <nav class="navbar navbar-expand-lg bg-primary" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="res/Toeter LOGO Rond voorkant 2024 transparant.png" class="header-logo" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#toeterMainNavBar"
+                        aria-controls="toeterMainNavBar">
+                        <span class="navbar-toggler-button">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#ededed"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </span>
+                    </button>
+                    <div
+                        class="offcanvas offcanvas-end text-bg-dark"
+                        tabindex="-1"
+                        id="toeterMainNavBar"
+                        aria-labelledby="toeterMainNav">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="toeterMainNav"></h5>
+                            <button
+                                type="button"
+                                class="btn-close btn-close-white"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/overtoeter.html">OVER TOETER</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/agenda.html">AGENDA</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/minishoots.html">MINI SHOOTS</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/shoots.html">SHOOTS</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/cursussen.html">CURSUSSEN</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/portfolio.html">PORTFOLIO</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/contact.html">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
+        <!-----------------------------/navbar------------------------------>
 
-        <div class="container-fluid border-bottom mb-4">
-            <div class="container">
+        <div class="container-fluid h-50 bg-main">
+            <div class="container my-5">
                 <div class="row">
-                    <div class="col-12 d-flex justify-content-between">
-                        <a href="/index.html" class="toeter-nav"> HOME </a>
-                        <a href="/over.html" class="toeter-nav"> OVER TOETER </a>
-                        <a href="/agenda.html" class="toeter-nav"> AGENDA </a>
-                        <a href="/shoots.html" class="toeter-nav"> SHOOTS </a>
-                        <a href="/cursussen.html" class="toeter-nav"> CURSUSSEN </a>
-                        <a href="/portfolio.html" class="toeter-nav"> PORTFOLIO </a>
-                        <a href="/contact.html" class="toeter-nav"> CONTACT </a>
+                    <div class="col-12 mb-4">
+                        <h1 class="reey">Algemene voorwaarden</h1>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center py-5">
-                    <h1 class="reey font--light">Algemene voorwaarden</h1>
-                </div>
-            </div>
-        </div>
+        <div class="container-fluid bg-green">
+            <div class="container">
+                <div class="row p-5 justify-content-between">
+                    <div class="col-lg-3 mb-5">
+                        <h3 class="gothic txt-light fw-700 mb-5">Over ToeTer</h3>
+                        <ul class="list-unstyled">
+                            <li class="footer-index-link pb-2">
+                                <a href="/index.html"> Home </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/overtoeter.html"> Over ToeTer </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/agenda.html"> Agenda </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/shoots.html"> Shoots </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/cursussen.html"> Cursussen</a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/portfolio.html"> Portfolio </a>
+                            </li>
+                        </ul>
+                    </div>
 
-        <div class="container py-5 border-bottom">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="amatic font--light">Artikel 1, algemeen</h3>
-                    <ol class="font--light gothic">
-                        <li>
-                            Deze voorwaarden zijn van toepassing op iedere aanbieding, offerte en overeenkomst tussen
-                            jou en ToeTer Photography voor zover van deze voorwaarden niet door ons uitdrukkelijk en
-                            schriftelijk is afgeweken.
-                        </li>
-                        <li>
-                            De toepasselijkheid van eventuele inkoop of andere voorwaarden worden door ToeTer
-                            Photography uitdrukkelijk van de hand gewezen.
-                        </li>
-                        <li>
-                            Indien onduidelijkheid bestaat omtrent de uitleg van één of meerdere bepalingen van deze
-                            algemene voorwaarden, dan dient de uitleg plaats te vinden ‘naar de geest’ van deze
-                            bepalingen.
-                        </li>
-                    </ol>
-                    <h3 class="amatic font--light">Artikel 2, offertes en aanbiedingen</h3>
-                    <ol class="font--light gothic">
-                        <li>
-                            Alle offertes en aanbiedingen van ToeTer Photography zijn vrijblijvend en hebben een
-                            geldigheid van een 7 dagen, tenzij anders bepaald.
-                        </li>
-                        <li>
-                            ToeTer Photography kan niet aan zijn offertes of aanbiedingen worden gehouden indien je
-                            redelijkerwijs kan begrijpen dat de offertes of aanbiedingen, dan wel een onderdeel daarvan,
-                            een kennelijke vergissing of verschrijving bevat.
-                        </li>
-                        <li>
-                            De in een offerte of aanbieding vermelde prijzen zijn inclusief BTW tenzij dit nadrukkelijk
-                            anders is aangegeven. Voor het afnemen van extra producten/diensten zal ToeTer Photography
-                            steeds vooraf een passend voorstel doen.
-                        </li>
-                    </ol>
-                    <h3 class="amatic font--light">Artikel 3, uitvoering</h3>
-                    <ol class="font--light gothic">
-                        <li>
-                            De overeenkomst tussen ToeTer Photography en jou wordt voor onbepaalde tijd aangegaan,
-                            tenzij uit de aard van de overeenkomst anders voortvloeit of indien partijen uitdrukkelijk
-                            en schriftelijk anders overeenkomen.
-                        </li>
-                        <li>
-                            Is voor de uitvoering van bepaalde werkzaamheden of voor de levering van bepaalde zaken een
-                            termijn overeengekomen of opgegeven, dan is dit nimmer een fatale termijn. Bij
-                            overschrijding van een termijn dien je ToeTer Photography derhalve schriftelijk in gebreke
-                            te stellen. Je dient daarbij een redelijke termijn te bieden om alsnog uitvoering te geven
-                            aan de overeenkomst.
-                        </li>
-                        <li>
-                            ToeTer Photography zal de overeenkomst naar beste inzicht en vermogen en overeenkomstig de
-                            eisen van goed vakmanschap uitvoeren.
-                        </li>
-                        <li>
-                            Mocht het door omstandigheden voor ToeTer Photography niet mogelijk zijn om de overeenkomst
-                            correct uit te voeren, dan zal ToeTer Photography in overleg met jou, zonder meerkosten, een
-                            nieuwe afspraak maken.
-                        </li>
-                    </ol>
-                    <h3 class="amatic font--light">
-                        Artikel 4, opschorting, ontbinding en tussentijdse opzegging van de overeenkomst
-                    </h3>
-                    <ol class="font--light gothic">
-                        <li>
-                            Zowel jij als ToeTer Photography hebben het recht om de overeenkomst zonder opgave van reden
-                            te ontbinden.
-                        </li>
-                        <li>
-                            Je dient minimaal 48 uur van tevoren de overeenkomst te annuleren. Bij opzegging tussen de
-                            48 uur en 24 uur ben je 50% van het factuurbedrag verschuldigd. Bij opzegging binnen de 24
-                            uur ben je het volledige factuurbedrag verschuldigd.
-                        </li>
-                        <li>
-                            De bedenktermijn en herroepingsrecht uit de Wet Kopen op Afstand is niet van toepassing.
-                        </li>
-                    </ol>
-                    <h3 class="amatic font--light">Artikel 5, betaling</h3>
-                    <ol class="font--light gothic">
-                        <li>
-                            Je dient de factuur van ToeTer Photography op onjuistheden controleren. Indien je niet
-                            binnen 7 dagen na factuurdatum de factuur met opgave van rechtens relevante redenen hebt
-                            afgewezen, is de factuur bindend.
-                        </li>
-                        <li>
-                            Betaling dient steeds te geschieden binnen 7 dagen na factuurdatum, op een door ToeTer
-                            Photography aan te geven wijze.
-                        </li>
-                        <li>
-                            Indien ToeTer Photography van jou nog geen volledige betaling heeft ontvangen, heeft ToeTer
-                            Photography het recht om uitvoering van de overeenkomst (of een deel van de overeenkomst) op
-                            te schorten.
-                        </li>
-                        <li>
-                            Het leveren van de foto's vindt plaats nadat ToeTer Photography van jou de volledige
-                            betaling heeft ontvangen tenzij schriftelijk anders is overeengekomen.
-                        </li>
-                    </ol>
-                    <h3 class="amatic font--light">Artikel 6, klachten</h3>
-                    <p class="font--light gothic">
-                        Klachten dienen zo spoedig mogelijk, doch uiterlijk binnen 7 werkdagen na levering kenbaar te
-                        worden gemaakt bij ToeTer Photography. ToeTer Photography heeft het recht om alsnog binnen een
-                        redelijke termijn goed werk voor afgekeurd werk te leveren.
-                    </p>
-                    <h3 class="amatic font--light">Artikel 7, aansprakelijkheid</h3>
-                    <ol class="font--light gothic">
-                        <li>
-                            Indien ToeTer Photography aansprakelijk mocht zijn voor enige schade, dan is deze
-                            aansprakelijkheid beperkt tot hetgeen in deze bepaling is geregeld. ToeTer Photography is
-                            niet aansprakelijk voor schade, van welke aard ook, ontstaan doordat ToeTer Photography is
-                            uitgegaan van door of namens jou verstrekte onjuiste en / of onvolledige gegevens.
-                        </li>
-                        <li>
-                            De aansprakelijkheid van ToeTer Photography is in ieder geval steeds beperkt tot het bedrag
-                            der uitkering van haar verzekeraar in voorkomend geval.
-                        </li>
-                        <li>ToeTer Photography is uitsluitend aansprakelijk voor directe, materiële schade.</li>
-                    </ol>
-                    <h3 class="amatic font--light">Artikel 8, intellectuele eigendomsrecht</h3>
-                    <ol class="font--light gothic">
-                        <li>
-                            ToeTer Photography behoudt zich de rechten en bevoegdheden voor die haar toekomen op grond
-                            van de Auteurswet en andere intellectuele wet- en regelgeving.
-                        </li>
-                        <li>
-                            Ruwe (raw) bestanden blijven eigendom van ToeTer Photography en zullen je niet ter
-                            beschikking worden gesteld. Bestelde digitale bestanden worden in JPG aangeleverd in een
-                            hoge resolutie.
-                        </li>
-                        <li>ToeTer Photography heeft het recht om gemaakte producten te publiceren.</li>
-                        <li>
-                            Van artikel 8 sub 3 kan worden afgeweken als ToeTer Photography dit met jou nadrukkelijk
-                            schriftelijk is overeenkomen voor aanvang van de fotoshoot.
-                        </li>
-                        <li>
-                            Het is niet toegestaan om door ToeTer Photography geleverde foto-producten te bewerken en/of
-                            door derden te laten bewerken.
-                        </li>
-                    </ol>
-                    <h3 class="amatic font--light">Artikel 9, toepasselijk recht en geschillen</h3>
-                    <ol class="font--light gothic">
-                        <li>
-                            Op alle rechtsbetrekkingen waarbij ToeTer Photography partij is, is uitsluitend het
-                            Nederlands recht van toepassing, ook indien aan een verbintenis geheel of gedeeltelijk in
-                            het buitenland uitvoering wordt gegeven of indien de bij de rechtsbetrekking betrokken
-                            partij aldaar woonplaats heeft.
-                        </li>
-                        <li>
-                            De rechter in de vestigingsplaats van ToeTer Photography is bij uitsluiting bevoegd van
-                            geschillen kennis te nemen, tenzij de wet dwingend anders voorschrijft. Niettemin heeft
-                            ToeTer Photography het recht het geschil voor te leggen aan de volgens de wet bevoegde
-                            rechter.
-                        </li>
-                        <li>
-                            Partijen zullen pas een beroep op de rechter doen nadat zij zich tot het uiterste hebben
-                            ingespannen een geschil in onderling overleg te beslechten.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </div>
+                    <div class="col-lg-3 mb-5">
+                        <h3 class="gothic txt-light fw-700 mb-5">Shop</h3>
+                        <ul class="list-unstyled">
+                            <li class="footer-index-link pb-2">
+                                <a href="/privacy.html"> Privacy verklaring </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/voorwaarden.html"> Algemene voorwaarden </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/reviews.html"> Reviews </a>
+                            </li>
+                        </ul>
+                    </div>
 
-        <div class="container">
-            <div class="row justify-content-between mb-5 pt-2">
-                <div class="col-12 justify-content-between d-flex">
-                    <a href="/reviews.html" class="footer-nav"> Reviews </a>
-
-                    <a href="/privacy.html" class="footer-nav"> Privacy verklaring </a>
-                    <a href="/voorwaarden.html" class="footer-nav"> Algemene voorwaarden </a>
-
-                    <a href="#" class="footer-nav"> Volg mij op </a>
+                    <div class="col-lg-3 mb-5">
+                        <h3 class="gothic txt-light fw-700 mb-5">Contact</h3>
+                        <ul class="list-unstyled">
+                            <li class="footer-index-link pb-2">
+                                <a href="/contact.html"> Contactformulier </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="#"> toeter.photography </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="#"> www.toeter.photography.nl </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

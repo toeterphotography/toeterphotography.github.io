@@ -1,116 +1,176 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Title</title>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-            crossorigin="anonymous" />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row justify-content-center pb-5 pt-3">
-                    <img src="res/logo_toeter_rond.png" class="toeter-header-logo" />
-                </div>
-            </div>
-        </div>
+        <title>Toeter Photography : Home</title>
 
-        <div class="container-fluid border-bottom mb-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-between">
-                        <a href="/index.html" class="toeter-nav"> HOME </a>
-                        <a href="/over.html" class="toeter-nav"> OVER TOETER </a>
-                        <a href="/agenda.html" class="toeter-nav"> AGENDA </a>
-                        <a href="/shoots.html" class="toeter-nav"> SHOOTS </a>
-                        <a href="/cursussen.html" class="toeter-nav"> CURSUSSEN </a>
-                        <a href="/portfolio.html" class="toeter-nav"> PORTFOLIO </a>
-                        <a href="/contact.html" class="toeter-nav toeter-nav-active"> CONTACT </a>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="style/styles_2.css" />
+        <script src="js/toeter.js"></script>
+    </head>
+    <body class="bg-main vh-100">
+        <!------------------------------navbar------------------------------>
+        <nav class="navbar navbar-expand-lg bg-primary" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="res/Toeter LOGO Rond voorkant 2024 transparant.png" class="header-logo" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#toeterMainNavBar"
+                        aria-controls="toeterMainNavBar">
+                        <span class="navbar-toggler-button">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#ededed"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </span>
+                    </button>
+                    <div
+                        class="offcanvas offcanvas-end text-bg-dark"
+                        tabindex="-1"
+                        id="toeterMainNavBar"
+                        aria-labelledby="toeterMainNav">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="toeterMainNav"></h5>
+                            <button
+                                type="button"
+                                class="btn-close btn-close-white"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/overtoeter.html">OVER TOETER</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/agenda.html">AGENDA</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/minishoots.html">MINI SHOOTS</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/shoots.html">SHOOTS</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/cursussen.html">CURSUSSEN</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="/portfolio.html">PORTFOLIO</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link active" href="/contact.html">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-5 offset-1 py-5">
-                    <h1 class="reey font--light">Contact</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="container py-5 border-bottom">
-            <div class="row">
-                <div class="col-12">
-                    <p class="font--light gothic">
-                        Wil je een shoot boeken of heb je een vraag? Laat het me weten en vul het contactformulier in en
-                        ik neem zo snel mogelijk contact met je op!
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container py-5 border-bottom">
+        </nav>
+        <!-----------------------------/navbar------------------------------>
+        <div class="container-fluid p-0">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="amatic font--light">Contactformulier</h2>
-                </div>
-            </div>
-
-            <div class="row p-3 border">
-                <div class="col-md-6 d-flex flex-column justify-content-between h-100">
-                    <input type="text" class="form-control mb-1" id="input_name" placeholder="Naam" />
-                    <input type="text" class="form-control mb-1" id="input_mail" placeholder="E-mail" />
-                    <input type="text" class="form-control mb-1" id="input_phone" placeholder="Telefoon" />
-                    <input type="text" class="form-control mb-1" id="input_address" placeholder="Adres" />
-                    <div class="form-row">
-                        <div class="form-group col-4">
-                        <input type="text" class="form-control mb-1" id="input_zip" placeholder="Postcode" />
-                        </div>
-                        <div class="form-group col-8">
-                         <input type="text" class="form-control mb-1" id="input_city" placeholder="Woonplaats" />
-                        </div>
-                    </div>
-                    
-                    
-                   
-                </div>
-                <div class="col-md-6 mb-5">
-                    <textarea
-                        class="form-control"
-                        id="input_body"
-                        rows="8"
-                        placeholder="Interesse in, of vragen over..."></textarea>
-                </div>
-                
-                <div class="col-12 d-flex justify-content-center">
-                    <button class="btn btn-secondary">
-                        VERSTUREN
-                    </button>
+                    <img
+                        class="img-header"
+                        src="res/imgs/Contact%20pagina%20(Gele%20filter%20eroverheen%20zie%20Figma).jpg" />
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row justify-content-between mb-5 pt-2">
-                <div class="col-12 justify-content-between d-flex">
-                   <a href="/reviews.html" class="footer-nav"> Reviews </a>
-
-                    <a href="/privacy.html" class="footer-nav"> Privacy verklaring </a>
-                    <a href="/voorwaarden.html" class="footer-nav"> Algemene voorwaarden </a>
-
-                    <a href="#" class="footer-nav"> Volg mij op </a>
+        <div class="container-fluid h-50 bg-main">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <h1 class="reey">Contact</h1>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="container-fluid bg-green">
+            <div class="container">
+                <div class="row p-5 justify-content-between">
+                    <div class="col-lg-3 mb-5">
+                        <h3 class="gothic txt-light fw-700 mb-5">Over ToeTer</h3>
+                        <ul class="list-unstyled">
+                            <li class="footer-index-link pb-2">
+                                <a href="/index.html"> Home </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/overtoeter.html"> Over ToeTer </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/agenda.html"> Agenda </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/shoots.html"> Shoots </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/cursussen.html"> Cursussen</a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/portfolio.html"> Portfolio </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 mb-5">
+                        <h3 class="gothic txt-light fw-700 mb-5">Shop</h3>
+                        <ul class="list-unstyled">
+                            <li class="footer-index-link pb-2">
+                                <a href="/privacy.html"> Privacy verklaring </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/voorwaarden.html"> Algemene voorwaarden </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="/reviews.html"> Reviews </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 mb-5">
+                        <h3 class="gothic txt-light fw-700 mb-5">Contact</h3>
+                        <ul class="list-unstyled">
+                            <li class="footer-index-link pb-2">
+                                <a href="/contact.html"> Contactformulier </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="#"> toeter.photography </a>
+                            </li>
+                            <li class="footer-index-link pb-2">
+                                <a href="#"> www.toeter.photography.nl </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
