@@ -77,11 +77,11 @@ p {
 }
 
 .btn {
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
     font-family: Amatic SC;
     font-weight: 500;
-    font-size: 1.7em;
+    font-size: 18px;
     min-width: 160px;
 }
 
@@ -103,6 +103,14 @@ p {
 
 .bg-primary {
     background-color: var(--toeter-primary) !important;
+}
+
+.bg-secondary{
+    background-color: var(--toeter-secondary) !important;
+}
+
+.bg-trans{
+    opacity: 50%;
 }
 
 .bg-secondary-dark {
