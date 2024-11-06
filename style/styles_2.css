@@ -3,7 +3,8 @@
     --toeter-primary-variant: #be4d2c;
 
     --toeter-secondary: #424346;
-    --toeter-secondary-variant: #444548;
+    --toeter-secondary-variant: #353538;
+    --toeter-secondary-dark: #181818;
 
     --toeter-green: #bdc6b5;
     --toeter-green-variant: #a7b49c;
@@ -98,6 +99,17 @@ p {
     background-color: var(--toeter-primary) !important;
 }
 
+.bg-secondary-dark{
+    background-color: var(--toeter-secondary-variant);
+}
+.toeter-card-secondary{
+    background-color: var(--toeter-secondary);
+}
+
+.toeter-card-secondary:hover{
+    background-color: var(--toeter-secondary-variant);
+}
+
 .bg-green {
     background-color: var(--toeter-dark-green);
 }
@@ -132,43 +144,17 @@ p {
     max-height: 480px;
 }
 
-.page-label-background {
-    background-image: linear-gradient(
-        to right,
-        var(--toeter-green),
-        var(--toeter-green),
-        var(--toeter-green),
-        var(--toeter-bg-main),
-        var(--toeter-bg-main),
-        var(--toeter-bg-main)
-    );
-}
 
-.bg-layer {
-    z-index: -1;
-}
 
 .page-label {
     background-color: var(--toeter-green);
     border-color: var(--toeter-dark-green);
-    border-top-width: 2px;
-    border-bottom-width: 2px;
-    border-top-style: solid;
-    border-bottom-style: solid;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 48px;
 }
 
-.page-label-end {
-    background-color: var(--toeter-green);
-    border-color: var(--toeter-dark-green);
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-right-style: solid;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
-    border-right-width: 2px;
-    border-top-right-radius: 20% 50%;
-    border-bottom-right-radius: 20% 50%;
-}
+
 
 .toeter-carousel-card {
     min-height: 20em;
@@ -218,6 +204,13 @@ svg.carousel-control {
     max-width: 220px;
 }
 
+.border-secondary{
+    border-style: solid;
+    border-color: var(--toeter-secondary-dark);
+    border-width: 2px;
+    border-radius: 3px;
+}
+
 .footer-index-link > a {
     font-family: Century Gothic;
     font-weight: 700;
@@ -230,22 +223,7 @@ svg.carousel-control {
         height: 100%;
     }
     
-    .page-label-end {
-        border-style: none;
-        border-radius: 0;
-        border-right-width: 0;
-    }
-
-    .page-label-background {
-        background-color: var(--toeter-green);
-        background-image: none;
-        border-top-color: var(--toeter-dark-green);
-        border-top-width: 2px;
-        border-top-style: solid;
-        border-bottom-color: var(--toeter-dark-green);
-        border-bottom-width: 2px;
-        border-bottom-style: solid;
-    }
+    
 
     .ttr-shoot-star {
         max-width: 180px;

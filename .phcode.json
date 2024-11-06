@@ -1,6 +1,348 @@
 {
-    "livePreviewUseDevServer": false,
-    "livePreviewServerProjectPath": "/",
-    "livePreviewHotReloadSupported": false,
-    "livePreviewFramework": "Custom"
+    "ESLint.disabled": false,
+
+	// true to disable HTML linter in problems panel
+	"HTMLLint.disabled": false,
+
+	// true to enable Selection View
+	"SelectionView.enabled": true,
+
+	// Close the search as soon as the editor is focused
+	"autoHideSearch": false,
+
+	// true to automatically rename paired HTML/XML tag, else false
+	"autoRenameTags": true,
+
+	// true to auto detect tabs and spaces used in current file
+	"autoTabSpaces": true,
+
+	// Enable/disable Phoenix Code Auto-update
+	"autoUpdate": true,
+
+	// Options that control how Beautify Code works
+	"beautify.options": {
+		// Put the > of a multi-line HTML (HTML, JSX, Vue, Angular) element at the end of the last line instead of being alone on the next line (does not apply to self closing elements)
+		"bracketSameLine": true,
+
+		// Specify the line length that beautifier will wrap on
+		"printWidth": 220,
+
+		// Wrap prose if it exceeds the print width in markdown files
+		"proseWrap": "preserve",
+
+		// Change when properties in objects are quoted
+		"quoteProps": "as-needed",
+
+		// Add a semicolon at the end of every statement
+		"semi": true,
+
+		// Enforce single attribute per line in HTML, Vue and JSX
+		"singleAttributePerLine": false,
+
+		// Use single quotes instead of double quotes
+		"singleQuote": false,
+
+		// Print trailing commas wherever possible in multi-line comma-separated syntactic structures
+		"trailingComma": "none"
+	},
+
+	// true to automatically close braces, brackets and parentheses
+	"closeBrackets": true,
+
+	// false to remove the "Close Others Above" from the Working Files context menu
+	"closeOthers.above": true,
+
+	// false to remove the "Close Others Below" from the Working Files context menu
+	"closeOthers.below": true,
+
+	// false to remove the "Close Others" from the Working Files context menu
+	"closeOthers.others": true,
+
+	// Sets the tag closing options
+	"closeTags": {
+		// An array of tags that should not be auto-closed
+		"dontCloseTags": [],
+
+		// An array of tags that when opened has a blank line
+		"indentTags": [],
+
+		// Close when / of closing tag is typed
+		"whenClosing": true,
+
+		// Close when > of opening tag is typed
+		"whenOpening": true
+	},
+
+	// true to always generate collapsible section markers when indent level changes
+	"code-folding.alwaysUseIndentFold": false,
+
+	// true to enable code folding
+	"code-folding.enabled": true,
+
+	// true to make Section-collapsing markers visible only when you move the mouse over the gutter
+	"code-folding.hideUntilMouseover": false,
+
+	// true to enable code folding on selected text in the editor
+	"code-folding.makeSelectionsFoldable": true,
+
+	// Limits how many levels deep Collapse All applies
+	"code-folding.maxFoldLevel": 2,
+
+	// Minimum lines before a collapsible section icon appears
+	"code-folding.minFoldSize": 2,
+
+	// true to remember collapsed sections if you close and reopen a file or project
+	"code-folding.saveFoldStates": true,
+
+	// Enable/disable HTML attribute hints
+	"codehint.AttrHints": true,
+
+	// Enable/disable CSS/LESS/SCSS property hints
+	"codehint.CssPropHints": true,
+
+	// Enable/disable JavaScript code hints
+	"codehint.JSHints": true,
+
+	// Enable/disable Preferences code hints
+	"codehint.PrefHints": true,
+
+	// Enable/disable SVG code hints
+	"codehint.SVGHints": true,
+
+	// Enable/disable HTML entity hints
+	"codehint.SpecialCharHints": true,
+
+	// Enable/disable HTML tag hints
+	"codehint.TagHints": true,
+
+	// Enable/disable URL hints in HTML & CSS/LESS/SCSS
+	"codehint.UrlCodeHints": true,
+
+	// true to enable drag and drop functionality for files and folders from the file explorer or Finder
+	"dragAndDrop": true,
+
+	// Enable/disable Drag & Drop functionality
+	"dragDropText": true,
+
+	// An array of ruler colors corresponding to the rulers option in the editor. Eg: ["#3d3d3d", "red"]
+	"editor.rulerColors": [],
+
+	// An array of column numbers to draw vertical rulers in the editor. Eg: [80, 100]
+	"editor.rulers": [],
+
+	// true to enable editor rulers, else false
+	"editor.rulersEnabled": true,
+
+	// Sort Extensions using downloadCount or publishedDate
+	"extensions.sort": "totalDownloads",
+
+	// Choose a zoom scale factor ranging from 0.1 (for a more compact view) to 2 (for a larger, more magnified view). Available in desktop apps only
+	"fonts.desktopZoomScale": 1,
+
+	// Change font family
+	"fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
+
+	// Change font size; e.g. 13px
+	"fonts.fontSize": "12px",
+
+	// Enable the Health Data Tracking
+	"healthData.healthDataTracking": true,
+
+	// Enables automatic highlighting of matching strings throughout the document
+	"highlightMatches": false,
+
+	// true to enable indenting of line comments
+	"indentLineComment": true,
+
+	// Selects the way CodeMirror handles input and focus. It can be textarea, which is the default, or contenteditable which is better for screen readers (unstable)
+	"inputStyle": "textarea",
+
+	// true to insert the currently selected code hint on tab
+	"insertHintOnTab": true,
+
+	// A list of files that have been detected to cause Tern to run out of control
+	"jscodehints.detectedExclusions": [],
+
+	// The amount of time after which Tern will time out when trying to understand files
+	"jscodehints.inferenceTimeout": 30000,
+
+	// true to not automatically show JS code hints when . is typed
+	"jscodehints.noHintsOnDot": false,
+
+	// Enable/disable datatype details in JavaScript code hints
+	"jscodehints.typedetails": true,
+
+	// true to disable JSHints linter in problems panel
+	"jshint.disabled": false,
+
+	// Additional mappings from file extension to language name
+	"language.fileExtensions": {},
+
+	// Additional mappings from file name to language name
+	"language.fileNames": {},
+
+	// Preferences for Language Tools
+	"languageTools":
+	},
+
+	// Doing copy and cut when there's no selection will copy or cut the whole lines that have cursors in them
+	"lineWiseCopyCut": true,
+
+	// The time in milliseconds after which asynchronous linters time out
+	"linting.asyncTimeout": 10000,
+
+	// true to collapse linting panel
+	"linting.collapsed": false,
+
+	// true to enable Code Inspection
+	"linting.enabled": true,
+
+	// Array of linters to run first
+	"linting.prefer": [],
+
+	// true to run providers specified in linting.prefer only
+	"linting.usePreferredOnly": false,
+
+	// Server Framework, currently supports only docusaurus
+	"livePreviewFramework": {},
+
+	// true if the server supports hot reload and disable Live Preview reload on save
+	"livePreviewHotReloadSupported": {},
+
+	// Path within project that is served by Development Server Eg. www/  (Default is /)
+	"livePreviewServerProjectPath": "/",
+
+	// Your Development Server URL for the project, Eg. http://localhost:8000/php
+	"livePreviewServerURL": "",
+
+	// true to show Live Preview Panel at startup
+	"livePreviewShowAtStartup": true,
+
+	// true to enable custom development server
+	"livePreviewUseDevServer": false,
+
+	// Live Preview Highlight settings
+	"livedev.remoteHighlight": {
+		"animateEndValue": {
+			// Default: rgba(0, 162, 255, 0)
+			"background-color": "rgba(0, 162, 255, 0)",
+
+			// Default: 0.6
+			"opacity": 0.6
+		},
+
+		"animateStartValue": {
+			// Default: rgba(0, 162, 255, 0.5)
+			"background-color": "rgba(0, 162, 255, 0.5)"
+		},
+
+		// Default: rgba(21, 165, 255, 0.85)
+		"borderColor": "rgba(21, 165, 255, 0.85)",
+
+		"marginStyling": {
+			// Default: rgba(21, 165, 255, 0.58)
+			"background-color": "rgba(21, 165, 255, 0.58)"
+		},
+
+		"paddingStyling": {
+			// Default: rgba(0, 162, 255, 0.5)
+			"border-color": "rgba(0, 162, 255, 0.5)",
+
+			// Default: dashed
+			"border-style": "dashed",
+
+			// Default: 1px
+			"border-width": "1px"
+		},
+
+		// Default: true
+		"showPaddingMargin": true
+	},
+
+	// Maximum code hints displayed at once
+	"maxCodeHints": 50,
+
+	// Maximum Number of Search Items in Search History
+	"maxSearchHistory": 50,
+
+	// true to enable code only mode and hide all other UI elements in Phoenix Code
+	"noDistractions": false,
+
+	// true to collapse panes after the last file from the pane is closed via pane header close button
+	"pane.mergePanesWhenLastFileClosed": false,
+
+	// Toggle when to show the close and flip-view buttons on the header.
+	"pane.showPaneHeaderButtons": "hover",
+
+	// false to disable opening preferences file in split view
+	"preferencesView.openPrefsInSplitView": true,
+
+	// false to open user preferences file in left/top pane
+	"preferencesView.openUserPrefsInSecondPane": true,
+
+	// The URL of the proxy server used for extension installation
+	"proxy": "",
+
+	// true to enable Quick View
+	"quickview.enabled": true,
+
+	// true to show image previews for URLs missing extensions
+	"quickview.extensionlessImagePreview": true,
+
+	// true to show Quick View on hover over numbers in editor
+	"quickview.numberEditor": true,
+
+	// Enable/disable navigation in recent files
+	"recent-files.navigation": true,
+
+	// Enable/disable JavaScript Code Refactoring
+	"refactoring.JSRefactoring": true,
+
+	// true to enable scrolling beyond the end of the document
+	"scrollPastEnd": false,
+
+	// false to disable all code hints
+	"showCodeHints": true,
+
+	// Keeps the blinking cursor visible when you have a text selection
+	"showCursorWhenSelecting": false,
+
+	// true to show line numbers in a “gutter” to the left of the code
+	"showLineNumbers": true,
+
+	// Automatically indent when creating a new block
+	"smartIndent": true,
+
+	// false to turn off soft tabs behavior
+	"softTabs": true,
+
+	// true to sort the directories first in the project tree
+	"sortDirectoriesFirst": true,
+
+	// Number of spaces to use for space-based indentation
+	"spaceUnits": 4,
+
+	// true to highlight background color of the line the cursor is on
+	"styleActiveLine": true,
+
+	// Number of spaces to display for tabs
+	"tabSize": 4,
+
+	// Select a Phoenix Code theme
+	"themes.theme": "system-default",
+
+	// true to allow custom scroll bars
+	"themes.themeScrollbars": true,
+
+	// true to enable showing the visual command overlay on pressing Ctrl/Cmd key 3 consecutive times
+	"tripleCtrlPalette": true,
+
+	// true to generate uppercase hex colors in Inline Color Editor
+	"uppercaseColors": false,
+
+	// true to use tabs instead of spaces
+	"useTabChar": false,
+
+	// Wrap lines that exceed the viewport width
+	"wordWrap": false
 }
